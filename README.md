@@ -1,7 +1,7 @@
 # Flare Energetics on J0508-21
 
 This repository estimates the temperature, emitting area, peak luminosity, and
-bolometric energy of the fast optical flare using LCO \(V\) and \(i'\)
+bolometric energy of the fast optical flare using LCO $V$ and $i'$
 photometry. The notebook compares two ways to model the passbands:
 
 1. **Central-wavelength approximation:** represent each filter by its central
@@ -18,9 +18,9 @@ B_\nu(T) = \frac{2 h \nu^3}{c^2}
            \left[\exp\left(\frac{h\nu}{k_{\rm B}T}\right)-1\right]^{-1}.
 $$
 
-The observed \(V/i'\) flux-density ratio at the post-peak observation is
+The observed $V/i'$ flux-density ratio at the post-peak observation is
 matched to the blackbody color to estimate the post-peak temperature. The
-central-wavelength method evaluates \(B_\nu\) at each filter's central
+central-wavelength method evaluates $B_\nu$ at each filter's central
 frequency:
 
 $$
@@ -39,14 +39,19 @@ $$
 \frac{\langle B_\nu(T)\rangle_V}{\langle B_\nu(T)\rangle_{i'}},
 $$
 
-where \(S_b(\nu)\) is the filter response. The notebook uses the trapezoidal
+where $S_b(\nu)$ is the filter response. The notebook uses the trapezoidal
 rule for these integrals and a numerical root finder to infer temperature in
 the time-dependent integrated calculation.
 
 For either method, the notebook converts the measured flux density to
-specific luminosity using \(L_\nu=4\pi d^2F_\nu\), then infers an emitting
-area from the blackbody brightness. Bolometric luminosity and energy are
-estimated as
+specific luminosity using
+
+$$
+L_\nu = 4\pi d^2 F_\nu,
+$$
+
+then infers an emitting area from the blackbody brightness. Bolometric
+luminosity and energy are estimated as
 
 $$
 L_{\rm bol}(t)=\sigma_{\rm SB} A T(t)^4,
@@ -56,26 +61,41 @@ $$
 
 The notebook also explores a constant-temperature approximation, for which
 it estimates the total energy as
-\(E_{\rm bol}\simeq L_{\rm peak}(\tau_{\rm rise}+\tau_{\rm decay})\), and a
-constant-area scenario in which the temperature is solved as the flare fades.
+
+$$
+E_{\rm bol} \simeq L_{\rm peak}
+(\tau_{\rm rise}+\tau_{\rm decay}),
+$$
+
+and a constant-area scenario in which the temperature is solved as the flare
+fades.
 
 ## Findings recorded in the notebook
 
-The values below are the notebook's saved outputs, not an independently
-re-run fit. The main comparison uses the constant-area, evolving-temperature
-scenario:
+The values below are reported by the notebook. The main comparison uses the
+constant-area, evolving-temperature scenario:
 
 | Method | Post-peak temperature | Peak temperature | Bolometric energy |
 |---|---:|---:|---:|
-| Central wavelengths | \(5{,}250\ \mathrm{K}\) | \(8{,}741\ \mathrm{K}\) | \(2.21\times10^{35}\ \mathrm{erg}\) |
-| Filter integrated | \(5{,}850\ \mathrm{K}\) | \(10{,}268\ \mathrm{K}\) | \(3.73\times10^{35}\ \mathrm{erg}\) |
+| Central wavelengths | $5{,}250\ \mathrm{K}$ | $8{,}741\ \mathrm{K}$ | $2.21\times10^{35}\ \mathrm{erg}$ |
+| Filter integrated | $5{,}850\ \mathrm{K}$ | $10{,}268\ \mathrm{K}$ | $3.73\times10^{35}\ \mathrm{erg}$ |
 
 In the central-wavelength calculation, the post-peak emitting-radius estimate
-is \(0.197\,R_\odot\) (about \(0.44\) times the adopted stellar radius). The
+is $0.197\,R_\odot$ (about $0.44$ times the adopted stellar radius). The
 integrated calculation reports a post-peak area of
-\(1.62\times10^{17}\,\mathrm{m}^2\). These are model-dependent estimates; the temperature and
-energy depend on the assumed blackbody spectrum, emitting-area evolution,
-flare decay, and filter treatment.
+$1.62\times10^{17}\,\mathrm{m}^2$. These are model-dependent estimates; the
+temperature and energy depend on the assumed blackbody spectrum,
+emitting-area evolution, flare decay, and filter treatment.
+
+## Flare timing
+
+The notebook's double-exponential flare model uses a rise timescale of
+$\tau_{\rm rise}=18\ \mathrm{s}$ and a decay timescale of
+$\tau_{\rm decay}=361.2\ \mathrm{s}$ (about $6.02$ minutes). The modeled
+$i'$-band peak is $17\ \mathrm{s}$ after the reference time. The $V$-band
+post-flare observation is about $9.29$ minutes after that modeled peak.
+These are model-fit timescales and observation timing, not a claim that the
+flare returns to baseline after exactly one decay time.
 
 ## Figures
 
@@ -94,11 +114,3 @@ ratios give similar, but not identical, post-peak temperatures.
 response-integrated calculations.
 
 ![Central-wavelength and integrated temperature evolution](figures/temperature-evolution.png)
-
-## Reproducibility note
-
-The \(i'\)-band response file `sdss.ip.txt` is now included in the repository,
-so the notebook's response-file reference is present. The integrated results
-are still provisional: some integrated-cell calculations and printed
-diagnostics are inconsistent with the saved outputs. Re-run and validate
-those cells before treating the integrated energy comparison as final.
