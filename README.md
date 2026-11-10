@@ -9,6 +9,11 @@ photometry observed on J0508-21. We compare two ways to model the passbands:
 2. **Response-integrated calculation:** fold a blackbody spectrum through
    each measured filter response and integrate numerically.
 
+## Contributors
+- Daniele Vigano 
+- Simranpret Kaur
+- Aaron Maas
+
 ## Model and methods
 
 The flare spectrum is approximated as a blackbody. Its spectral radiance is
