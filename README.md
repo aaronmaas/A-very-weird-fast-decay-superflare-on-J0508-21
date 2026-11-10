@@ -78,7 +78,7 @@ The values below are reported by the jupyter notebook. The main comparison uses 
 constant-area, evolving-temperature scenario:
 
 | Method | Post-peak temperature | Peak temperature | Bolometric energy |
-|---|---:|---:|---:|
+|---|---|---|---|
 | Central wavelengths | $5250\ \mathrm{K}$ | $8741\ \mathrm{K}$ | $2.21\times10^{35}\ \mathrm{erg}$ |
 | Filter integrated | $5850\ \mathrm{K}$ | $10268\ \mathrm{K}$ | $3.73\times10^{35}\ \mathrm{erg}$ |
 
