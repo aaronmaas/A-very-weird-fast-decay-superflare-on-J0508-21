@@ -2,7 +2,7 @@
 
 This repository estimates the temperature, emitting area, peak luminosity, and
 bolometric energy of the fast optical flare using LCO $V$ and $i'$
-photometry. The notebook compares two ways to model the passbands:
+photometry observed on J0508-21. We compare two ways to model the passbands:
 
 1. **Central-wavelength approximation:** represent each filter by its central
    frequency.
@@ -15,11 +15,11 @@ The flare spectrum is approximated as a blackbody. Its spectral radiance is
 
 $$
 B_\nu(T) = \frac{2 h \nu^3}{c^2}
-           \left[\exp\left(\frac{h\nu}{k_{\rm B}T}\right)-1\right]^{-1}.
+           \left[\frac{1}{\exp\left(\frac{h\nu}{k_{\rm B}T}\right)-1}\right).
 $$
 
 The observed $V/i'$ flux-density ratio at the post-peak observation is
-matched to the blackbody color to estimate the post-peak temperature. The
+matched to the blackbody color to estimate the post-peak temperature for which we have simultaneous observation. The
 central-wavelength method evaluates $B_\nu$ at each filter's central
 frequency:
 
@@ -39,7 +39,7 @@ $$
 \frac{\langle B_\nu(T)\rangle_V}{\langle B_\nu(T)\rangle_{i'}},
 $$
 
-where $S_b(\nu)$ is the filter response. The notebook uses the trapezoidal
+where $S_b(\nu)$ is the filter response. We used the trapezoidal
 rule for these integrals and a numerical root finder to infer temperature in
 the time-dependent integrated calculation.
 
@@ -59,20 +59,22 @@ L_{\rm bol}(t)=\sigma_{\rm SB} A T(t)^4,
 E_{\rm bol} \simeq \sum_j L_{\rm bol}(t_j)\,\Delta t.
 $$
 
-The notebook also explores a constant-temperature approximation, for which
-it estimates the total energy as
+We also explored a constant-temperature approximation, for which
+we estimate the total energy as
 
 $$
 E_{\rm bol} \simeq L_{\rm peak}
 (\tau_{\rm rise}+\tau_{\rm decay}),
 $$
 
-and a constant-area scenario in which the temperature is solved as the flare
+, with $tau$ being the rise or decay time scale (this formula can be obtained by assuming constant temperature and integrating our double exponential
+model fully. 
+As comparison we also calculated constant-area scenario in which the temperature is solved as the flare
 fades.
 
-## Findings recorded in the notebook
+## Findings 
 
-The values below are reported by the notebook. The main comparison uses the
+The values below are reported by the jupyter notebook. The main comparison uses the
 constant-area, evolving-temperature scenario:
 
 | Method | Post-peak temperature | Peak temperature | Bolometric energy |
@@ -89,13 +91,12 @@ emitting-area evolution, flare decay, and filter treatment.
 
 ## Flare timing
 
-The notebook's double-exponential flare model uses a rise timescale of
+The double-exponential flare model uses a rise timescale of
 $\tau_{\rm rise}=18\ \mathrm{s}$ and a decay timescale of
-$\tau_{\rm decay}=361.2\ \mathrm{s}$ (about $6.02$ minutes). The modeled
+$\tau_{\rm decay}=361.2\ \mathrm{s}$ (about $6.02$ minutes) (from fit to i' band data). The modeled
 $i'$-band peak is $17\ \mathrm{s}$ after the reference time. The $V$-band
 post-flare observation is about $9.29$ minutes after that modeled peak.
-These are model-fit timescales and observation timing, not a claim that the
-flare returns to baseline after exactly one decay time.
+
 
 ## Figures
 
