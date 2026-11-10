@@ -79,8 +79,8 @@ constant-area, evolving-temperature scenario:
 
 | Method | Post-peak temperature | Peak temperature | Bolometric energy |
 |---|---:|---:|---:|
-| Central wavelengths | $5{,}250\ \mathrm{K}$ | $8{,}741\ \mathrm{K}$ | $2.21\times10^{35}\ \mathrm{erg}$ |
-| Filter integrated | $5{,}850\ \mathrm{K}$ | $10{,}268\ \mathrm{K}$ | $3.73\times10^{35}\ \mathrm{erg}$ |
+| Central wavelengths | $5250\ \mathrm{K}$ | $8741\ \mathrm{K}$ | $2.21\times10^{35}\ \mathrm{erg}$ |
+| Filter integrated | $5850\ \mathrm{K}$ | $10268\ \mathrm{K}$ | $3.73\times10^{35}\ \mathrm{erg}$ |
 
 In the central-wavelength calculation, the post-peak emitting-radius estimate
 is $0.197\,R_\odot$ (about $0.44$ times the adopted stellar radius). The
