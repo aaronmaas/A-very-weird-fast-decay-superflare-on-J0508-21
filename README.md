@@ -11,7 +11,7 @@ photometry observed on J0508-21. We compare two ways to model the passbands:
 
 ## Contributors
 - Daniele Vigano 
-- Simranpret Kaur
+- Simranpreet Kaur
 - Aaron Maas
 
 ## Model and methods
