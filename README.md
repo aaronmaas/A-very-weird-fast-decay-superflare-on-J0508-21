@@ -97,10 +97,8 @@ response-integrated calculations.
 
 ## Reproducibility note
 
-The integrated results are included as recorded notebook outputs and should
-be treated as provisional. The notebook currently reads `sdss.ip.txt`, which
-is not present in the repository (the repository includes
-`bssl-ix-023.txt`), and some integrated-cell calculations and printed
+The \(i'\)-band response file `sdss.ip.txt` is now included in the repository,
+so the notebook's response-file reference is present. The integrated results
+are still provisional: some integrated-cell calculations and printed
 diagnostics are inconsistent with the saved outputs. Re-run and validate
-those cells after resolving the response-file reference before treating the
-integrated energy comparison as final.
+those cells before treating the integrated energy comparison as final.
