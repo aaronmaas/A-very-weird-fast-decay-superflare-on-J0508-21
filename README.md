@@ -15,7 +15,7 @@ The flare spectrum is approximated as a blackbody. Its spectral radiance is
 
 $$
 B_\nu(T) = \frac{2 h \nu^3}{c^2}
-           \left[\frac{1}{\exp\left(\frac{h\nu}{k_{\rm B}T}\right)-1}\right).
+           \left(\frac{1}{\exp\left(\frac{h\nu}{k_{\rm B}T}\right)-1}\right).
 $$
 
 The observed $V/i'$ flux-density ratio at the post-peak observation is
