@@ -89,8 +89,8 @@ constant-area, evolving-temperature scenario:
 
 The post-peak temperature estimates differ by $600\ \mathrm{K}$; the filter-integrated value is about 11% higher than the central-wavelength value.
 
-Using the adopted stellar radius of $0.445\,R_\odot$, the stellar surface area
-is $4\pi R_\star^2 \simeq 1.20\times10^{18}\,\mathrm{m}^2$. The inferred
+Using the adopted stellar radius of $0.445 R_\odot$, the stellar surface area
+is $4\pi R_\star^2 \simeq 1.20\times10^{18} \mathrm{m}^2$. The inferred
 post-peak emitting areas correspond to the following fractions of that full
 stellar surface:
 
