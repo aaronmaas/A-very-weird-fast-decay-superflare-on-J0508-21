@@ -2,7 +2,7 @@
 
 This repository estimates the temperature, emitting area, peak luminosity, and
 bolometric energy of the fast optical flare using LCO $V$ and $i'$
-photometry observed on J0508-21. We compare two ways to model the passbands:
+photometry observed on 2M0508-21. We compare two ways to model the passbands:
 
 1. **Central-wavelength approximation:** represent each filter by its central
    frequency.
