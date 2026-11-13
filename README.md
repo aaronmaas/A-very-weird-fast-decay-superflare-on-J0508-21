@@ -87,7 +87,7 @@ the time-dependent integrated calculation, using the equations above and $A(t) =
 
 ## Findings 
 
-The values below are reported by the jupyter notebook. The main comparison uses the
+The values below can be accessed in the jupyter notebook. The main comparison uses the
 constant-area, evolving-temperature scenario:
 
 | Method | Post-peak temperature | Peak temperature | Bolometric energy |
@@ -95,9 +95,9 @@ constant-area, evolving-temperature scenario:
 | Central wavelengths | $5250\ \mathrm{K}$ | $8741\ \mathrm{K}$ | $2.21\times10^{35}\ \mathrm{erg}$ |
 | Filter integrated | $5850\ \mathrm{K}$ | $10268\ \mathrm{K}$ | $3.73\times10^{35}\ \mathrm{erg}$ |
 
-The post-peak temperature estimates differ by $600\ \mathrm{K}$; the filter-integrated value is about 11% higher than the central-wavelength value.
+The post-peak temperature estimates differ by $600 \mathrm{K}$; the filter-integrated value is about 11% higher than the central-wavelength value.
 
-Using the adopted stellar radius of $0.445 R_\odot$, the stellar surface area
+Using the stellar radius of $0.445 R_\odot$, the stellar surface area
 is $4\pi R_\star^2 \simeq 1.20\times10^{18} \mathrm{m}^2$. The inferred
 post-peak emitting areas correspond to the following fractions of that full
 stellar surface:
@@ -107,9 +107,7 @@ stellar surface:
 | Central wavelengths | $2.37\times10^{17} \mathrm{m}^2$ | $0.197$ |
 | Filter integrated | $1.62\times10^{17} \mathrm{m}^2$ | $0.134$ |
 
-These are model-dependent estimates; the temperature, area, and energy depend
-on the assumed blackbody spectrum, emitting-area evolution, flare decay, and
-filter treatment. The filter-integrated value is about 6.3% lower than the central-wavelength value.
+The filter-integrated value is about 6.3% lower than the central-wavelength value. 
 
 ## Flare timing
 
