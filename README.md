@@ -7,7 +7,7 @@ photometry observed on J0508-21. We compare two ways to model the passbands:
 1. **Central-wavelength approximation:** represent each filter by its central
    frequency.
 2. **Response-integrated calculation:** fold a blackbody spectrum through
-   each measured filter response and integrate numerically.
+each measured filter response and integrate numerically.
 
 ## Contributors
 - Daniele Vigano 
@@ -87,12 +87,19 @@ constant-area, evolving-temperature scenario:
 | Central wavelengths | $5250\ \mathrm{K}$ | $8741\ \mathrm{K}$ | $2.21\times10^{35}\ \mathrm{erg}$ |
 | Filter integrated | $5850\ \mathrm{K}$ | $10268\ \mathrm{K}$ | $3.73\times10^{35}\ \mathrm{erg}$ |
 
-In the central-wavelength calculation, the post-peak emitting-radius estimate
-is $0.197\,R_\odot$ (about $0.44$ times the adopted stellar radius). The
-integrated calculation reports a post-peak area of
-$1.62\times10^{17}\,\mathrm{m}^2$. These are model-dependent estimates; the
-temperature and energy depend on the assumed blackbody spectrum,
-emitting-area evolution, flare decay, and filter treatment.
+Using the adopted stellar radius of $0.445\,R_\odot$, the stellar surface area
+is $4\pi R_\star^2 \simeq 1.20\times10^{18}\,\mathrm{m}^2$. The inferred
+post-peak emitting areas correspond to the following fractions of that full
+stellar surface:
+
+| Method | Post-peak emitting area | Fraction of stellar surface |
+|---|---:|---:|
+| Central wavelengths | $2.37\times10^{17}\,\mathrm{m}^2$ | $19.7\%$ |
+| Filter integrated | $1.62\times10^{17}\,\mathrm{m}^2$ | $13.4\%$ |
+
+These are model-dependent estimates; the temperature, area, and energy depend
+on the assumed blackbody spectrum, emitting-area evolution, flare decay, and
+filter treatment.
 
 ## Flare timing
 
