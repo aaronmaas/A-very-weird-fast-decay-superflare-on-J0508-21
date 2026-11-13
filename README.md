@@ -101,7 +101,7 @@ stellar surface:
 
 These are model-dependent estimates; the temperature, area, and energy depend
 on the assumed blackbody spectrum, emitting-area evolution, flare decay, and
-filter treatment.
+filter treatment. The filter-integrated value is about 6.3% lower than the central-wavelength value.
 
 ## Flare timing
 
