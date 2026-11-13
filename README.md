@@ -65,7 +65,7 @@ $$
 
 In order to obtain the energy we need to make some simplifying assumption. 
 
-#### Szenario 1
+#### Scenario 1
 We explored a constant-temperature approximation $T(t) = T(post)$ $\forall t$, for which
 we estimate the total energy as
 
@@ -79,7 +79,7 @@ model fully.
 As comparison we also calculated constant-area scenario in which the temperature is solved as the flare
 fades.
 
-#### Szenario 2
+#### Scenario 2
 Constant Area assumption. We take the area observed at post-flare, which we obtain due to the simultaneous observation at post flare. 
 Then we let T evolve by adopting the flare light curve double exponential model and a numerical root finder to infer temperature in
 the time-dependent integrated calculation, using the equations above and $A(t) = A(\mathrm{post})$  $\forall t$.
