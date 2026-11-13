@@ -74,7 +74,7 @@ E_{\rm bol} \simeq L_{\rm peak}
 (\tau_{\rm rise}+\tau_{\rm decay}),
 $$
 
-, with $tau$ being the rise or decay time scale (this formula can be obtained by assuming constant temperature and integrating our double exponential
+, with $\tau$ being the rise or decay time scale (this formula can be obtained by assuming constant temperature and integrating our double exponential
 model fully. 
 As comparison we also calculated constant-area scenario in which the temperature is solved as the flare
 fades.
