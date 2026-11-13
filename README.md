@@ -49,14 +49,14 @@ where $S_b(\nu)$ is the filter response. We used the trapezoidal
 rule for these integrals and a numerical root finder to infer temperature in
 the time-dependent integrated calculation.
 
-For either method, the notebook converts the measured flux density to
+For either method, we converted the measured flux density to
 specific luminosity using
 
 $$
 L_\nu = 4\pi d^2 F_\nu,
 $$
 
-then infers an emitting area from the blackbody brightness. Bolometric
+then infer an emitting area from the blackbody brightness. Bolometric
 luminosity and energy are estimated as
 
 $$
