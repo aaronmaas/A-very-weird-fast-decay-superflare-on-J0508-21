@@ -1,4 +1,4 @@
-# Flare Energetics on J0508-21
+# Flare Energetics on 2M0508-21
 
 This repository estimates the temperature, emitting area, peak luminosity, and
 bolometric energy of the fast optical flare using LCO $V$ and $i'$
