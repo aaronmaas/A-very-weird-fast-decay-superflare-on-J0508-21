@@ -60,7 +60,7 @@ luminosity and energy are estimated as
 $$
 L_{\rm bol}(t)=\sigma_{\rm SB} A(t) T(t)^4,
 \qquad
-E_{\rm bol} \simeq \sum_j L_{\rm bol}(t_j)\,\Delta t.
+E_{\rm bol} \simeq \sum_j L_{\rm bol}(t_j)\Delta t.
 $$
 
 In order to obtain the energy we need to make some simplifying assumption. 
