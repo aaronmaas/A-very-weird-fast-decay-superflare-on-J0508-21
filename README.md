@@ -13,7 +13,7 @@ each measured filter response and integrate numerically.
 - Daniele Vigano (central wavelength method)
 - Simranpreet Kaur (flare light curve modelling)
 - Aaron Maas (integrated filter method)
-- Copilot (helped with the Readme and Checked for Syntax errors)
+- Copilot (helped with the Readme and checked for errors in notebook)
 
 ## Model and methods
 
