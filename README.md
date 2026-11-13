@@ -93,9 +93,9 @@ post-peak emitting areas correspond to the following fractions of that full
 stellar surface:
 
 | Method | Post-peak emitting area | Fraction of stellar surface |
-|---|---:|---:|
-| Central wavelengths | $2.37\times10^{17}\,\mathrm{m}^2$ | $19.7\%$ |
-| Filter integrated | $1.62\times10^{17}\,\mathrm{m}^2$ | $13.4\%$ |
+|---|---|---|
+| Central wavelengths | $2.37\times10^{17}\,\mathrm{m}^2$ | $0.197$ |
+| Filter integrated | $1.62\times10^{17}\,\mathrm{m}^2$ | $0.134$ |
 
 These are model-dependent estimates; the temperature, area, and energy depend
 on the assumed blackbody spectrum, emitting-area evolution, flare decay, and
