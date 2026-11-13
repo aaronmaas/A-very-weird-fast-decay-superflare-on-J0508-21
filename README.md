@@ -10,9 +10,10 @@ photometry observed on J0508-21. We compare two ways to model the passbands:
 each measured filter response and integrate numerically.
 
 ## Contributors
-- Daniele Vigano 
-- Simranpreet Kaur
-- Aaron Maas
+- Daniele Vigano (central wavelength method)
+- Simranpreet Kaur (flare light curve modelling)
+- Aaron Maas (integrated filter method)
+- Copilot (helped with the Readme and Checked for Syntax errors)
 
 ## Model and methods
 
