@@ -46,9 +46,7 @@ $$
 $$
 
 where $S_b(\nu)$ is the filter response. We used the trapezoidal
-rule for these integrals and a numerical root finder to infer temperature in
-the time-dependent integrated calculation.
-
+rule for these integrals.
 For either method, we converted the measured flux density to
 specific luminosity using
 
@@ -60,12 +58,15 @@ then infer an emitting area from the blackbody brightness. Bolometric
 luminosity and energy are estimated as
 
 $$
-L_{\rm bol}(t)=\sigma_{\rm SB} A T(t)^4,
+L_{\rm bol}(t)=\sigma_{\rm SB} A(t) T(t)^4,
 \qquad
 E_{\rm bol} \simeq \sum_j L_{\rm bol}(t_j)\,\Delta t.
 $$
 
-We also explored a constant-temperature approximation, for which
+In order to obtain the energy we need to make some simplifying assumption. 
+
+#### Szenario 1
+We explored a constant-temperature approximation $T(t) = T(post)$ $\forall t$, for which
 we estimate the total energy as
 
 $$
@@ -77,6 +78,12 @@ $$
 model fully. 
 As comparison we also calculated constant-area scenario in which the temperature is solved as the flare
 fades.
+
+#### Szenario 2
+Constant Area assumption. We take the area observed at post-flare, which we obtain due to the simultaneous observation at post flare. 
+Then we let T evolve by adopting the flare light curve double exponential model and a numerical root finder to infer temperature in
+the time-dependent integrated calculation, using the equations above and $A(t) = A(\mathrm{post})$  $\forall t$.
+
 
 ## Findings 
 
